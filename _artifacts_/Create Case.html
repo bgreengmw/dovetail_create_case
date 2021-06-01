@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://dev.dovetailnow.com/agent/cases/create -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Create Case</title>
+
+    <!--<base href="/agent/">--><base href=".">
+
+    <link href="./Create Case_files/all.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="./Create Case_files/main.css" rel="stylesheet">
+  <link href="https://dev.dovetailnow.com/agent/_content/images/favicon.ico" rel="icon" type="image/x-icon"><style data-styled="active" data-styled-version="5.2.1"></style><link rel="stylesheet" type="text/css" href="./Create Case_files/admin_case_solution.e640a.css"><script charset="utf-8" src="./Create Case_files/admin_case_solution.e640a.js.download"></script><link rel="stylesheet" type="text/css" href="./Create Case_files/case_solution.71f7b.css"><script charset="utf-8" src="./Create Case_files/case_solution.71f7b.js.download"></script><link rel="stylesheet" type="text/css" href="./Create Case_files/case.c989b.css"><script charset="utf-8" src="./Create Case_files/case.c989b.js.download"></script><script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script></head>
+
+  <body class="toc-hidden">
+    <div id="notifications"><div></div></div>
+    <div id="header"><div>
+<nav class="navbar navbar-expand-md navbar-dark bg-header navbar--1Br7O">
+  <a class="navbar-brand mr-2 py-0" href="https://dev.dovetailnow.com/agent/">
+    <img src="./Create Case_files/CustomerConfigurationSetting!LogoSettings.AgentHeaderLogoImageUrl.png" title="Home" alt="Agent" style="max-height: 36px">
+  </a>
+
+  <div class="spinner"><div style="visibility: hidden;"><div class="spinner--1HUB-"></div>
+</div></div>
+
+  <button class="toc-btn btn btn-outline-light btn-sm shadow-none ml-2 mr-4" type="button">
+    <div class="center-content">
+      <i class="material-icons font-size-sm">menu</i>
+    </div>
+  </button>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown navItemDropdown--1lz7I">
+        <a class="nav-link dropdown-toggle" href="https://dev.dovetailnow.com/agent/#" data-toggle="dropdown">Create</a>
+
+        <div class="dropdown-menu">
+            <a class="dropdown-item disabled" disabled="true" tabindex="-1" title="Insufficient permissions">Asset</a>
+            <a class="dropdown-item disabled" disabled="true" tabindex="-1" title="Insufficient permissions">Broadcast</a>
+            <a class="dropdown-item create-case" href="https://dev.dovetailnow.com/agent/cases/create">Case</a>
+            <a class="dropdown-item disabled" disabled="true" tabindex="-1" title="Insufficient permissions">Employee</a>
+            <a class="dropdown-item disabled" disabled="true" tabindex="-1" title="Insufficient permissions">Organization</a>
+            <a class="dropdown-item disabled" disabled="true" tabindex="-1" title="Insufficient permissions">Site</a>
+            <a class="dropdown-item create-solution" href="https://dev.dovetailnow.com/agent/solutions/create">Solution</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown navItemDropdown--1lz7I">
+        <a class="nav-link dropdown-toggle" href="https://dev.dovetailnow.com/agent/#" data-toggle="dropdown">Query</a>
+
+        <div class="dropdown-menu">
+            <a class="dropdown-item disabled" disabled="true" tabindex="-1" title="Insufficient permissions">Asset</a>
+            <a class="dropdown-item disabled" disabled="true" tabindex="-1" title="Insufficient permissions">Broadcast</a>
+            <a class="dropdown-item query-case" href="https://dev.dovetailnow.com/agent/query/cases/new">Case</a>
+            <a class="dropdown-item disabled" disabled="true" tabindex="-1" title="Insufficient permissions">Employee</a>
+            <a class="dropdown-item disabled" disabled="true" tabindex="-1" title="Insufficient permissions">Organization</a>
+            <a class="dropdown-item disabled" disabled="true" tabindex="-1" title="Insufficient permissions">Site</a>
+            <a class="dropdown-item query-solution" href="https://dev.dovetailnow.com/agent/query/solutions/new">Solution</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown navItemDropdown--1lz7I">
+        <a class="nav-link dropdown-toggle" href="https://dev.dovetailnow.com/agent/#" data-toggle="dropdown">Apps</a>
+
+        <div class="dropdown-menu">
+
+            <a class="dropdown-item disabled" disabled="true" tabindex="-1" title="Insufficient permissions">Reports</a>
+
+            <a class="dropdown-item disabled" disabled="true" tabindex="-1" title="Insufficient permissions">Setup</a>
+        </div>
+      </li>
+    </ul>
+
+    <form class="form-inline my-2 my-lg-0 mr-3" id="app-search">
+      <div class="input-group">
+        <input class="form-control searchField--vcoI6" id="app-search-field" placeholder="Search" type="text">
+
+        <div class="input-group-append">
+          <button class="btn input-group-text">
+            <i class="material-icons">search</i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <div class="recent-items mr-3"><div><button class="btn btn-neutral text-white center-content btn--recent-item--3QLN5" title="Recent Items" type="button">
+  <i class="material-icons">history</i>
+</button>
+
+<div class="recent-items-popover"><div class="dt-popover" style="display: none;"><div class="popover-content"><div class="list--18Xv2"><h4 class="border-bottom border-neutral m-0 px-3 py-2">Recent Items</h4>
+<div class="recent-items-list"><div><div class="px-3 py-2">None</div></div></div>
+</div></div>
+<div class="dt-popover-arrow-top" x-arrow=""></div>
+</div></div>
+</div></div>
+    <div class="user-notifications mr-2"><div><button class="count btn btn-neutral font-weight-bold text-white p-0 button--3tPxa" type="button">0</button>
+<div class="user-notification-popover"><div class="dt-popover" style="display: none;"><div class="popover-content"><div><div class="list--28FTj">
+  <div class="text-center py-1">None</div>
+
+  <div class="user-notification-list"></div>
+
+</div>
+</div></div>
+<div class="dt-popover-arrow-top" x-arrow=""></div>
+</div></div>
+</div></div>
+
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown navItemDropdown--1lz7I">
+        <a class="nav-link dropdown-toggle" href="https://dev.dovetailnow.com/agent/#" data-toggle="dropdown">Anna Green</a>
+
+        <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item disabled" disabled="true" tabindex="-1" title="Insufficient permissions">Profile</a>
+
+          <a class="dropdown-item" href="https://dev.dovetailnow.com/agent/preferences">Preferences</a>
+
+          <a class="set-custom-home-page dropdown-item" href="https://dev.dovetailnow.com/agent/#">Set this page as Home</a>
+
+          <a class="dropdown-item show-about" href="https://dev.dovetailnow.com/agent/#">About</a>
+          <a class="dropdown-item" href="https://dev.dovetailnow.com/agent/logout" target="_self">Logout</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div></div>
+    <div id="main"><div><div class="mx-3">
+    <h2>Create Case</h2>
+</div>
+
+<div class="triple-pane">
+  <div class="content">
+    <div class="dt-card">
+      <div class="tabs mb-3"><ul class="tabs--1a951"><li class="tabItem--3W8Ml createCaseTab"><a class="tabLink--cRdXj position-relative active" data-panel="createCase" href="https://dev.dovetailnow.com/agent/">
+  <div class="d-flex align-items-center">
+    <span class="tabText--2juhA">Create</span>
+    
+
+  </div>
+</a>
+
+
+</li><li class="tabItem--3W8Ml employeePreviousCasesTab"><a class="tabLink--cRdXj position-relative" data-panel="employeePreviousCases" href="https://dev.dovetailnow.com/agent/">
+  <div class="d-flex align-items-center">
+    <span class="tabText--2juhA">Previous Cases
+Employee</span>
+    
+
+  </div>
+</a>
+
+
+</li><li class="tabItem--3W8Ml concerningPreviousCasesTab"><a class="tabLink--cRdXj position-relative" data-panel="concerningPreviousCases" href="https://dev.dovetailnow.com/agent/">
+  <div class="d-flex align-items-center">
+    <span class="tabText--2juhA">Previous Cases
+Concerning Employee</span>
+    
+
+  </div>
+</a>
+
+
+</li></ul></div>
+      <div class="panels sticky-panels"><div><div class="createCase panel"><div><form class="d-flex flex-column" id="create-case">
+  <div class="form-group row">
+  <label for="title" class="col-md-2 col-form-label required">Title</label>
+
+  <div class="col-md-10">
+    <input class="form-control auto-field" id="title" type="text" value="" maxlength="1000">
+  </div>
+</div>
+
+
+  <div class="employee-selector">
+    <div class="form-group row">
+  <label for="employeeId-selectized" class="col-md-2 col-form-label required">Employee</label>
+
+  <div class="col-md-10">
+    <div class="d-flex">
+      <select class="form-control auto-field selectized" id="employeeId" value="" tabindex="-1" style="display: none;"><option value="" selected="selected"></option></select><div class="selectize-control form-control auto-field single plugin-no_results_message plugin-remove_single"><div class="selectize-input items not-full"><input type="select-one" autocomplete="off" tabindex="" id="employeeId-selectized" placeholder="Find an employee" style="width: 113.734px;"></div><div class="selectize-dropdown single form-control auto-field plugin-no_results_message plugin-remove_single" style="display: none;"><div class="selectize-dropdown-header" style="display: none;">
+          <div class="selectize-dropdown-header-title">
+            <span class="selectize-dropdown-header-label">No Results Found</span>
+          </div>
+        </div><div class="selectize-dropdown-content"></div></div></div>
+
+      <div class="more align-self-center">
+        <span class="toggle-details icon-button p-0 ml-2 disabled">
+          <i class="material-icons">more_horiz</i>
+        </span>
+
+        <div class="popover-container d-flex"><div class="dt-popover" style="display: none;"><div class="popover-content"><div class="limitHeight--3-fHT"><table class="table table-sm table-striped table-borderless m-0">
+  <tbody>
+    <tr>
+      <td class="details-label" style="width: 140px">
+        <strong>Preferred Name</strong>
+      </td>
+      <td class="details-value">
+        <a href="https://dev.dovetailnow.com/agent/employee/" class="employee-name" target="_blank"></a>
+      </td>
+    </tr>
+    <tr>
+      <td class="details-label">
+        <strong>Primary Phone</strong>
+      </td>
+      <td class="details-value text-nowrap">
+        
+      </td>
+    </tr>
+    <tr>
+      <td class="details-label">
+        <strong>Primary Email</strong>
+      </td>
+      <td class="details-value">
+        <a href="mailto:"></a>
+      </td>
+    </tr>
+    <tr>
+      <td class="details-label">
+        <strong>Primary Site</strong>
+      </td>
+      <td class="details-value">
+        <a href="https://dev.dovetailnow.com/agent/site/" target="_blank"></a>
+      </td>
+    </tr>
+    <tr>
+      <td class="details-label">
+        <strong>Employee Id</strong>
+      </td>
+      <td class="details-value">
+        
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="employee-data-workday"></div>
+<div class="employee-data-fa"></div>
+</div></div>
+<div class="dt-popover-arrow-right" x-arrow=""></div>
+</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <div class="concerning-selector">
+    <div class="form-group row">
+  <label for="concerningEmployeeId-selectized" class="col-md-2 col-form-label ">Concerning Employee</label>
+
+  <div class="col-md-10">
+    <div class="d-flex">
+      <select class="form-control auto-field selectized" id="concerningEmployeeId" value="" tabindex="-1" style="display: none;"><option value="" selected="selected"></option></select><div class="selectize-control form-control auto-field single plugin-no_results_message plugin-remove_single"><div class="selectize-input items not-full"><input type="select-one" autocomplete="off" tabindex="" id="concerningEmployeeId-selectized" placeholder="Find an employee" style="width: 113.734px;"></div><div class="selectize-dropdown single form-control auto-field plugin-no_results_message plugin-remove_single" style="display: none;"><div class="selectize-dropdown-header" style="display: none;">
+          <div class="selectize-dropdown-header-title">
+            <span class="selectize-dropdown-header-label">No Results Found</span>
+          </div>
+        </div><div class="selectize-dropdown-content"></div></div></div>
+
+      <div class="more align-self-center">
+        <span class="toggle-details icon-button p-0 ml-2 disabled">
+          <i class="material-icons">more_horiz</i>
+        </span>
+
+        <div class="popover-container d-flex"><div class="dt-popover" style="display: none;"><div class="popover-content"><div class="limitHeight--3-fHT"><table class="table table-sm table-striped table-borderless m-0">
+  <tbody>
+    <tr>
+      <td class="details-label" style="width: 140px">
+        <strong>Preferred Name</strong>
+      </td>
+      <td class="details-value">
+        <a href="https://dev.dovetailnow.com/agent/employee/" class="employee-name" target="_blank"></a>
+      </td>
+    </tr>
+    <tr>
+      <td class="details-label">
+        <strong>Primary Phone</strong>
+      </td>
+      <td class="details-value text-nowrap">
+        
+      </td>
+    </tr>
+    <tr>
+      <td class="details-label">
+        <strong>Primary Email</strong>
+      </td>
+      <td class="details-value">
+        <a href="mailto:"></a>
+      </td>
+    </tr>
+    <tr>
+      <td class="details-label">
+        <strong>Primary Site</strong>
+      </td>
+      <td class="details-value">
+        <a href="https://dev.dovetailnow.com/agent/site/" target="_blank"></a>
+      </td>
+    </tr>
+    <tr>
+      <td class="details-label">
+        <strong>Employee Id</strong>
+      </td>
+      <td class="details-value">
+        
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="employee-data-workday"></div>
+<div class="employee-data-fa"></div>
+</div></div>
+<div class="dt-popover-arrow-right" x-arrow=""></div>
+</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <div class="form-group row">
+    <div class="col-md-6">
+      <div class="form-group row">
+  <label class="col-md-4 col-form-label required">Case Type</label>
+
+  <div class="col-md-8">
+    <select class="form-control auto-field selectized" id="caseType" value="" data-list-name="CaseType" multilevel="" tabindex="-1" style="display: none;"><option value="Please Specify" selected="selected">Please Specify</option></select><div class="selectize-control form-control auto-field single"><div class="selectize-input items full has-options has-items"><div class="item" data-value="Please Specify">Please Specify</div><input type="select-one" autocomplete="off" tabindex="" id="caseType-selectized" style="width: 4px;"></div><div class="selectize-dropdown single form-control auto-field" style="display: none;"><div class="selectize-dropdown-content"></div></div></div>
+  </div>
+</div>
+
+      <div class="form-group row">
+  <label for="status" class="col-md-4 col-form-label ">Status</label>
+
+  <div class="col-md-8">
+    <select class="form-control auto-field" id="status" value="" data-list-name="CaseStatus"><option value="Open" selected="">Open</option><option value="On Hold">On Hold</option><option value="Waiting">Waiting</option><option value="Resolved Resolved - No Issues">Resolved: Resolved - No Issues</option></select>
+  </div>
+</div>
+
+      <div class="form-group row">
+  <label for="priority" class="col-md-4 col-form-label ">Priority</label>
+
+  <div class="col-md-8">
+    <select class="form-control auto-field" id="priority" value="" data-list-name="CasePriority"><option value="Urgent">Urgent</option><option value="High">High</option><option value="Medium" selected="">Medium</option><option value="Low">Low</option></select>
+  </div>
+</div>
+
+      <div class="form-group row">
+  <label for="issueSeverity" class="col-md-4 col-form-label ">Severity</label>
+
+  <div class="col-md-8">
+    <select class="form-control auto-field" id="issueSeverity" value="" data-list-name="CaseIssueSeverity"><option value="Urgent">Urgent</option><option value="High">High</option><option value="Medium" selected="">Medium</option><option value="Low">Low</option></select>
+  </div>
+</div>
+
+
+
+      <div class="row">
+        <div class="offset-md-4 col-md-8">
+          <div class="d-inline-block bg-warning rounded py-1 px-2 text-white">
+            
+    <div class="d-flex align-items-center">
+      <input class="mr-2" id="isSensitive" type="checkbox">
+      <label class="mb-0" for="isSensitive">Sensitive</label>
+    </div>
+  
+          </div>
+
+          <div class="d-inline-block bg-info rounded py-1 px-2 text-white">
+            
+    <div class="d-flex align-items-center">
+      <input class="mr-2" id="isAvailableInPortal" type="checkbox">
+      <label class="mb-0" for="isAvailableInPortal">Available in Portal</label>
+    </div>
+  
+          </div>
+        </div>
+      </div>
+
+      <h2>Files</h2>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group mb-0">
+            <a class="add-attachment" href="https://dev.dovetailnow.com/agent/#" tabindex="-1">Choose files</a>
+            <span> or drag them here</span>
+            <div class="d-none case-file-input"><div class="uppy-Root uppy-FileInput-container"><input class="uppy-FileInput-input" type="file" name="files[]" multiple="" style=""></div></div>
+          </div>
+        </div>
+      </div>
+
+        <div class="drag-drop-zone mb-2">
+          <div class="center-content flex-column drag-drop-zone-inner">
+            <i class="material-icons">cloud_upload</i>
+            Drop files here
+          </div>
+        </div>
+
+      <div class="case-attachments-list"><div class="d-flex flex-column"></div></div>
+    </div>
+
+    <div class="col-md-6">
+      <div>
+        <button class="restore-draft btn btn-warning py-0 mb-1">Restore Draft</button>
+      </div>
+
+      <div class="fr-box fr-basic fr-top" role="application"><div class="fr-toolbar fr-desktop fr-top fr-basic"><button id="fullscreen-1" type="button" tabindex="-1" role="button" aria-pressed="false" title="Fullscreen" class="fr-command fr-btn fr-btn-font_awesome_5" data-cmd="fullscreen"><i class="fas fa-expand" aria-hidden="true"></i><span class="fr-sr-only">Fullscreen</span></button><button id="bold-1" type="button" tabindex="-1" role="button" aria-pressed="false" title="Bold (Ctrl+B)" class="fr-command fr-btn fr-btn-font_awesome_5" data-cmd="bold"><i class="fas fa-bold" aria-hidden="true"></i><span class="fr-sr-only">Bold</span></button><button id="italic-1" type="button" tabindex="-1" role="button" aria-pressed="false" title="Italic (Ctrl+I)" class="fr-command fr-btn fr-btn-font_awesome_5" data-cmd="italic"><i class="fas fa-italic" aria-hidden="true"></i><span class="fr-sr-only">Italic</span></button><button id="underline-1" type="button" tabindex="-1" role="button" aria-pressed="false" title="Underline (Ctrl+U)" class="fr-command fr-btn fr-btn-font_awesome_5" data-cmd="underline"><i class="fas fa-underline" aria-hidden="true"></i><span class="fr-sr-only">Underline</span></button><button id="color-1" type="button" tabindex="-1" role="button" title="Colors" class="fr-command fr-btn fr-btn-font_awesome_5" data-cmd="color" data-popup="true"><i class="fas fa-tint" aria-hidden="true"></i><span class="fr-sr-only">Colors</span></button><div class="fr-separator fr-vs" role="separator" aria-orientation="vertical"></div><button id="fontFamily-1" type="button" tabindex="-1" role="button" aria-controls="dropdown-menu-fontFamily-1" aria-expanded="false" aria-haspopup="true" title="Font Family" class="fr-command fr-btn fr-dropdown fr-btn-font_awesome_5 fr-selection" data-cmd="fontFamily"><i class="fas fa-font" aria-hidden="true"></i><span class="fr-sr-only">Font Family</span></button><div id="dropdown-menu-fontFamily-1" class="fr-dropdown-menu" role="listbox" aria-labelledby="fontFamily-1" aria-hidden="true"><div class="fr-dropdown-wrapper" role="presentation"><div class="fr-dropdown-content" role="presentation"><ul class="fr-dropdown-list" role="presentation"><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="fontFamily" data-param1="Arial,Helvetica,sans-serif" style="font-family: Arial,Helvetica,sans-serif" title="Arial">Arial</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="fontFamily" data-param1="Georgia,serif" style="font-family: Georgia,serif" title="Georgia">Georgia</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="fontFamily" data-param1="Impact,Charcoal,sans-serif" style="font-family: Impact,Charcoal,sans-serif" title="Impact">Impact</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="fontFamily" data-param1="Tahoma,Geneva,sans-serif" style="font-family: Tahoma,Geneva,sans-serif" title="Tahoma">Tahoma</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="fontFamily" data-param1="&#39;Times New Roman&#39;,Times,serif" style="font-family: &#39;Times New Roman&#39;,Times,serif" title="Times New Roman">Times New Roman</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="fontFamily" data-param1="Verdana,Geneva,sans-serif" style="font-family: Verdana,Geneva,sans-serif" title="Verdana">Verdana</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="fontFamily" data-param1="&#39;Clear Sans Light&#39;, &#39;HelveticaNeue&#39;, &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif" style="font-family: &#39;Clear Sans Light&#39;, &#39;HelveticaNeue&#39;, &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif" title="Clear Sans Light">Clear Sans Light</a></li></ul></div></div></div><button id="fontSize-1" type="button" tabindex="-1" role="button" aria-controls="dropdown-menu-fontSize-1" aria-expanded="false" aria-haspopup="true" title="Font Size" class="fr-command fr-btn fr-dropdown fr-btn-font_awesome_5 fr-selection" data-cmd="fontSize"><i class="fas fa-text-height" aria-hidden="true"></i><span class="fr-sr-only">Font Size</span></button><div id="dropdown-menu-fontSize-1" class="fr-dropdown-menu" role="listbox" aria-labelledby="fontSize-1" aria-hidden="true"><div class="fr-dropdown-wrapper" role="presentation"><div class="fr-dropdown-content" role="presentation"><ul class="fr-dropdown-list" role="presentation"><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="fontSize" data-param1="8px" title="8">8</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="fontSize" data-param1="9px" title="9">9</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="fontSize" data-param1="10px" title="10">10</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="fontSize" data-param1="11px" title="11">11</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="fontSize" data-param1="12px" title="12">12</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="fontSize" data-param1="13px" title="13">13</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="fontSize" data-param1="14px" title="14">14</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="fontSize" data-param1="18px" title="18">18</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="fontSize" data-param1="24px" title="24">24</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="fontSize" data-param1="30px" title="30">30</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="fontSize" data-param1="36px" title="36">36</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="fontSize" data-param1="48px" title="48">48</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="fontSize" data-param1="60px" title="60">60</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="fontSize" data-param1="72px" title="72">72</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="fontSize" data-param1="96px" title="96">96</a></li></ul></div></div></div><div class="fr-separator fr-vs" role="separator" aria-orientation="vertical"></div><button id="align-1" type="button" tabindex="-1" role="button" aria-controls="dropdown-menu-align-1" aria-expanded="false" aria-haspopup="true" title="Align" class="fr-command fr-btn fr-dropdown fr-btn-font_awesome_5" data-cmd="align"><i class="fas fa-align-left" aria-hidden="true"></i><span class="fr-sr-only">Align</span></button><div id="dropdown-menu-align-1" class="fr-dropdown-menu" role="listbox" aria-labelledby="align-1" aria-hidden="true"><div class="fr-dropdown-wrapper" role="presentation"><div class="fr-dropdown-content" role="presentation"><ul class="fr-dropdown-list" role="presentation"><li role="presentation"><a class="fr-command fr-title" tabindex="-1" role="option" data-cmd="align" data-param1="left" title="Align Left"><i class="fas fa-align-left" aria-hidden="true"></i><span class="fr-sr-only">Align Left</span></a></li><li role="presentation"><a class="fr-command fr-title" tabindex="-1" role="option" data-cmd="align" data-param1="center" title="Align Center"><i class="fas fa-align-center" aria-hidden="true"></i><span class="fr-sr-only">Align Center</span></a></li><li role="presentation"><a class="fr-command fr-title" tabindex="-1" role="option" data-cmd="align" data-param1="right" title="Align Right"><i class="fas fa-align-right" aria-hidden="true"></i><span class="fr-sr-only">Align Right</span></a></li><li role="presentation"><a class="fr-command fr-title" tabindex="-1" role="option" data-cmd="align" data-param1="justify" title="Align Justify"><i class="fas fa-align-justify" aria-hidden="true"></i><span class="fr-sr-only">Align Justify</span></a></li></ul></div></div></div><div class="fr-btn-wrap"><button id="formatOL-1" type="button" tabindex="-1" role="button" title="Ordered List" class="fr-command fr-btn fr-btn-font_awesome_5" data-cmd="formatOL"><i class="fas fa-list-ol" aria-hidden="true"></i><span class="fr-sr-only">Ordered List</span></button><button id="formatOLOptions-1" type="button" tabindex="-1" role="button" aria-controls="dropdown-menu-formatOLOptions-1" aria-expanded="false" aria-haspopup="true" title="Ordered List" class="fr-command fr-btn fr-dropdown fr-options fr-btn-font_awesome_5" data-cmd="formatOLOptions"></button><div id="dropdown-menu-formatOLOptions-1" class="fr-dropdown-menu" role="listbox" aria-labelledby="formatOLOptions-1" aria-hidden="true"><div class="fr-dropdown-wrapper" role="presentation"><div class="fr-dropdown-content" role="presentation"><ul class="fr-dropdown-list" role="presentation"><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="formatOL" data-param1="default" title="Default">Default</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="formatOL" data-param1="lower-alpha" title="Lower Alpha">Lower Alpha</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="formatOL" data-param1="lower-greek" title="Lower Greek">Lower Greek</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="formatOL" data-param1="lower-roman" title="Lower Roman">Lower Roman</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="formatOL" data-param1="upper-alpha" title="Upper Alpha">Upper Alpha</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="formatOL" data-param1="upper-roman" title="Upper Roman">Upper Roman</a></li></ul></div></div></div></div><div class="fr-btn-wrap"><button id="formatUL-1" type="button" tabindex="-1" role="button" title="Unordered List" class="fr-command fr-btn fr-btn-font_awesome_5" data-cmd="formatUL"><i class="fas fa-list-ul" aria-hidden="true"></i><span class="fr-sr-only">Unordered List</span></button><button id="formatULOptions-1" type="button" tabindex="-1" role="button" aria-controls="dropdown-menu-formatULOptions-1" aria-expanded="false" aria-haspopup="true" title="Unordered List" class="fr-command fr-btn fr-dropdown fr-options fr-btn-font_awesome_5" data-cmd="formatULOptions"></button><div id="dropdown-menu-formatULOptions-1" class="fr-dropdown-menu" role="listbox" aria-labelledby="formatULOptions-1" aria-hidden="true"><div class="fr-dropdown-wrapper" role="presentation"><div class="fr-dropdown-content" role="presentation"><ul class="fr-dropdown-list" role="presentation"><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="formatUL" data-param1="default" title="Default">Default</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="formatUL" data-param1="circle" title="Circle">Circle</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="formatUL" data-param1="disc" title="Disc">Disc</a></li><li role="presentation"><a class="fr-command" tabindex="-1" role="option" data-cmd="formatUL" data-param1="square" title="Square">Square</a></li></ul></div></div></div></div><div class="fr-separator fr-vs" role="separator" aria-orientation="vertical"></div><button id="insertTable-1" type="button" tabindex="-1" role="button" title="Insert Table" class="fr-command fr-btn fr-btn-font_awesome_5" data-cmd="insertTable" data-popup="true"><i class="fas fa-table" aria-hidden="true"></i><span class="fr-sr-only">Insert Table</span></button><button id="insertLink-1" type="button" tabindex="-1" role="button" title="Insert Link (Ctrl+K)" class="fr-command fr-btn fr-btn-font_awesome_5" data-cmd="insertLink" data-popup="true"><i class="fas fa-link" aria-hidden="true"></i><span class="fr-sr-only">Insert Link</span></button><button id="insertImage-1" type="button" tabindex="-1" role="button" title="Insert Image (Ctrl+P)" class="fr-command fr-btn fr-btn-font_awesome_5" data-cmd="insertImage" data-popup="true"><i class="fas fa-image" aria-hidden="true"></i><span class="fr-sr-only">Insert Image</span></button><button id="insertVideo-1" type="button" tabindex="-1" role="button" title="Insert Video" class="fr-command fr-btn fr-btn-font_awesome_5" data-cmd="insertVideo" data-popup="true"><i class="fas fa-camera" aria-hidden="true"></i><span class="fr-sr-only">Insert Video</span></button></div><div class="fr-wrapper show-placeholder" dir="auto" style="max-height: 200px; overflow: auto; height: 200px;"><div class="fr-element fr-view" dir="auto" contenteditable="true" style="min-height: 168px;" aria-disabled="false" spellcheck="true"><p style="font-family: &quot;Clear Sans Light&quot;, HelveticaNeue, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px;"><br></p></div><span class="fr-placeholder" style="font-size: 13px; line-height: unset; margin-top: 0px; padding-top: 16px; padding-left: 16px; margin-left: 0px; padding-right: 16px; margin-right: 0px; text-align: left; font-family: &quot;Clear Sans Light&quot;, HelveticaNeue, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;">Enter Notes Here</span></div></div><textarea id="notes" rows="5" style="display: none;"></textarea>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="flexible-attribute-header d-none">Additional Details</h2>
+      <div class="flexible-attribute-fields"></div>
+    </div>
+  </div>
+
+  <hr class="w-100 my-2">
+
+  <div class="align-self-end">
+    <button type="button" class="create-case-and-close btn btn-outline-primary">Create and Close</button>
+
+    <button class="create-case btn btn-primary" type="button">Create</button>
+  </div>
+</form>
+</div></div><div class="employeePreviousCases panel d-none"></div><div class="concerningPreviousCases panel d-none"></div></div></div>
+    </div>
+  </div>
+
+  <div class="right-sidebar">
+    <div class="dt-card labels"><div><div class="d-flex justify-content-between align-items-center">
+  <h5 class="mb-0">Labels</h5>
+
+  <button class="btn btn-action btn-sm center-content">
+    <i class="material-icons">add</i>
+  </button>
+</div>
+
+<div class="popover-container"><div class="dt-popover" style="display: none;"><div class="popover-content"><div><div>No More Labels</div></div></div>
+<div class="dt-popover-arrow-top" x-arrow=""></div>
+</div></div>
+<div class="selected-labels"><div></div></div>
+</div></div>
+    <div class="dt-card matching-solutions"><div><div class="d-flex mb-2">
+  <h5 class="m-0">
+    <span class="mr-1">Matching Solutions</span>
+
+  </h5>
+</div>
+
+<div class="solution-listing"><div>None</div></div>
+
+</div></div>
+    <div class="dt-card xpert-hr d-none"></div>
+  </div>
+</div>
+</div></div>
+    <div id="footer"><div><div class="container-fluid d-flex justify-content-between bg-dark text-white font-size-xs">
+  <span>Copyright Dovetail Software</span>
+  <span>Press ? for available shortcuts</span>
+</div>
+</div></div>
+    <div id="modal"></div>
+    <div id="toc"><div class="toc--3rw-v"><div data-testid="toc"><a href="https://dev.dovetailnow.com/agent/query/my-cases" class="TocLinkContainer-lk0wia-0 dTlNUk"><div class="Box-u9xwmy-0 FlexBox-u9xwmy-1 beMJLH bGKPiN"><div class="Box-u9xwmy-0 FlexBox-u9xwmy-1 faehmy bGKPiN"><i class="material-icons ">work_outline</i></div><div class="Box-u9xwmy-0 hYJFfL"><span class="">My Cases</span></div></div><span class="Badge-sc-1n98fi4-0 PillBadge-sc-1n98fi4-1 bsWBrS gpkNNQ">0</span></a><a href="https://dev.dovetailnow.com/agent/query/my-solutions" class="TocLinkContainer-lk0wia-0 dTlNUk"><div class="Box-u9xwmy-0 FlexBox-u9xwmy-1 beMJLH bGKPiN"><div class="Box-u9xwmy-0 FlexBox-u9xwmy-1 faehmy bGKPiN"><i class="material-icons ">library_books</i></div><div class="Box-u9xwmy-0 hYJFfL"><span class="">My Solutions</span></div></div><span class="Badge-sc-1n98fi4-0 PillBadge-sc-1n98fi4-1 bsWBrS gpkNNQ">0</span></a><a href="https://dev.dovetailnow.com/agent/query/cases/my-queues" class="TocLinkContainer-lk0wia-0 dTlNUk"><div class="Box-u9xwmy-0 FlexBox-u9xwmy-1 beMJLH bGKPiN"><div class="Box-u9xwmy-0 FlexBox-u9xwmy-1 faehmy bGKPiN"><i class="material-icons ">inbox</i></div><div class="Box-u9xwmy-0 hYJFfL"><span class="">Cases in My Queues</span></div></div><span class="Badge-sc-1n98fi4-0 PillBadge-sc-1n98fi4-1 bsWBrS gpkNNQ">0</span></a><a href="https://dev.dovetailnow.com/agent/query/solutions/my-queues" class="TocLinkContainer-lk0wia-0 dTlNUk"><div class="Box-u9xwmy-0 FlexBox-u9xwmy-1 beMJLH bGKPiN"><div class="Box-u9xwmy-0 FlexBox-u9xwmy-1 faehmy bGKPiN"><i class="material-icons ">dynamic_feed</i></div><div class="Box-u9xwmy-0 hYJFfL"><span class="">Solutions in My Queues</span></div></div><span class="Badge-sc-1n98fi4-0 PillBadge-sc-1n98fi4-1 bsWBrS gpkNNQ">0</span></a><div class="TocLinkGroupToggle-sc-1iyp2us-1 dlCSHC"><div class="Box-u9xwmy-0 FlexBox-u9xwmy-1 beMJLH bGKPiN"><div class="Box-u9xwmy-0 FlexBox-u9xwmy-1 faehmy bGKPiN"><div class="Box-u9xwmy-0 FlexBox-u9xwmy-1 CaretIcon-sc-1iyp2us-0 hYJFfL bGKPiN dlaIMi"><i class="material-icons ">arrow_right</i></div></div>My Queues</div></div><div class="collapse"><div class="TocLinkContainer-lk0wia-0 dTlNUk"><div class="Box-u9xwmy-0 dwkCuK"><span class="">All of your queues are empty</span></div></div></div><div class="TocLinkGroupToggle-sc-1iyp2us-1 dlCSHC"><div class="Box-u9xwmy-0 FlexBox-u9xwmy-1 beMJLH bGKPiN"><div class="Box-u9xwmy-0 FlexBox-u9xwmy-1 faehmy bGKPiN"><div class="Box-u9xwmy-0 FlexBox-u9xwmy-1 CaretIcon-sc-1iyp2us-0 hYJFfL bGKPiN dlaIMi"><i class="material-icons ">arrow_right</i></div></div>Labels</div></div><div class="collapse"><div class="TocLinkContainer-lk0wia-0 dTlNUk"><div class="Box-u9xwmy-0 dwkCuK"><span class="">No open cases with your labels</span></div></div></div><div class="TocLinkGroupToggle-sc-1iyp2us-1 dlCSHC"><div class="Box-u9xwmy-0 FlexBox-u9xwmy-1 beMJLH bGKPiN"><div class="Box-u9xwmy-0 FlexBox-u9xwmy-1 faehmy bGKPiN"><div class="Box-u9xwmy-0 FlexBox-u9xwmy-1 CaretIcon-sc-1iyp2us-0 hYJFfL bGKPiN dlaIMi"><i class="material-icons ">arrow_right</i></div></div>My Favorite Queries</div></div><div class="collapse"><div class="TocLinkContainer-lk0wia-0 dTlNUk"><div class="Box-u9xwmy-0 dwkCuK"><span class="">No Favorite Queries</span></div></div></div><a href="https://dev.dovetailnow.com/agent/all-queries" class="TocLinkContainer-lk0wia-0 dTlNUk"><div class="Box-u9xwmy-0 FlexBox-u9xwmy-1 beMJLH bGKPiN"><div class="Box-u9xwmy-0 FlexBox-u9xwmy-1 faehmy bGKPiN"><i class="material-icons ">list</i></div><div class="Box-u9xwmy-0 hYJFfL"><span class="">All Queries</span></div></div></a></div></div></div>
+
+    <input id="api-root" type="hidden" value="//dev.dovetailnow.com/agent/api/">
+
+    <script type="text/javascript">window.dtData = {"security":{"antiForgery":"YJegxPraMOmyku0sGKfen7P8JS3lXAI5oQA6GfURx9xmn0S3imICj1ssgUi8lNsTVoAYF4gYxn4aRxx9NvmZcTAhydyDbq+c+vJrGLQ0qY2k4gPA3uvXGUsZolaJrIjntP6qE2nPn7D3vMfV3mO5Y+OWh0M="},"settings":{"agentWebsite":{"applicationPauseInterval":29,"batchActionMaxRowCount":1000,"exagoReportsEnabled":true,"notificationPollingIntervalInSeconds":60,"portalUrlBase":"https://dev.portal.demo.dovetailnow.com","tocPollingIntervalInSeconds":120},"attachments":{"blockedFileExtensionsCsv":"ade,adp,app,bas,bat,chm,class,cmd,com,cpl,crt,dll,exe,fxp,hlp,hta,ins,isp,jse,lnk,mda,mdb,mde,mdt,mdw,mdz,msc,msi,msp,mst,ops,pcd,pif,prf,prg,reg,scf,scr,sct,shb,shs,url,vb,vbe,vbs,wsc,wsf,wsh","confidentialAttachmentsEnabled":false,"maximumFileSizeKB":51200},"email":{"outgoingConfiguration":{"caseTracking":{"outgoingEmailSubjectPrefix":"About Case"}}},"logos":{"agentFaviconImageUrl":"/agent/_content/images/favicon.ico","agentHeaderLogoImageUrl":"https://s3-us-west-2.amazonaws.com/avatars.demo.us-west-2.dovetailnow.com/dev/CustomerConfigurationSetting!LogoSettings.AgentHeaderLogoImageUrl.png?timestamp=636947497576087980"},"richText":{"defaultFontFamilyName":"Clear Sans Light","defaultFontSize":13,"includedFontFamilies":"\u0027Clear Sans Light\u0027, \u0027HelveticaNeue\u0027, \u0027Helvetica Neue\u0027, Helvetica, Arial, sans-serif"},"virusScan":{"allowNotScannedDownloads":false,"showVirusScanStatus":true},"workday":{"enableWorkday":true}},"localization":{"{PROPERTY}_CHANGED_FROM_{FROM}_TO_{TO}":"\u003cstrong\u003e{0}\u003c/strong\u003e changed from \u003cstrong\u003e{1}\u003c/strong\u003e to \u003cstrong\u003e{2}\u003c/strong\u003e","{PROPERTY}_CHANGED_TO_{TO}":"\u003cstrong\u003e{0}\u003c/strong\u003e changed to \u003cstrong\u003e{1}\u003c/strong\u003e","{PROPERTY}_CHANGED":"\u003cstrong\u003e{0}\u003c/strong\u003e changed","403_MESSAGE":"You do not have permission to do this action","500_MESSAGE":"Server Error 500","ABOUT":"About","ACCEPT":"Accept","ACCEPTED":"Accepted","ACTION_UNAVAILABLE":"Action Unavailable","ACTIONS":"Actions","ADD":"Add","ADDITIONAL_DETAILS":"Additional Details","ALLOW_REDACTION":"Allow Redaction","APPLICATION_PAUSED_EXPLANATION":"The application has been paused due to inactivity","APPLICATION_PAUSED":"Application Paused","APPLICATION":"Application","APPS":"Apps","ASSET":"Asset","ASSIGN":"Assign","ASSIGNED_TO_{ID}_{FIRST}_{LAST}":"Assigned to \u003ca href=\u0022user/{0}\u0022 target=\u0022_self\u0022\u003e{1} {2}\u003c/a\u003e","ASSIGNED":"Assigned","AT":"at","ATTACHMENT_ADDED":"Attachment Added","ATTACHMENT_BLOCKED_{NAME}":"The following potentially unsafe attachment has been blocked: \u003cstrong\u003e{0}\u003c/strong\u003e","ATTACHMENT_BLOCKED":"Attachment Blocked","ATTACHMENT_DELETED":"Attachment Deleted","ATTACHMENTS":"Attachments","AVAILABLE_IN_PORTAL":"Available in Portal","BCC":"BCC","BILL_TO":"Bill To","BILLABLE_EXPENSE":"Billable Expense","BILLABLE_TIME":"Billable Time","BODY":"Body","BROADCAST":"Broadcast","BUSINESS_TITLE":"Business Title","BY":"by","CANCEL_REDACT_REASON":"Explain why you\u0027re canceling the scheduled redaction","CANCEL_REDACTION":"Cancel Redaction","CANCEL_SCHEDULED_REDACTION":"Cancel Scheduled Redaction","CANCEL":"Cancel","CASE_{ID}":"Case {0}","CASE_CLOSED":"Case Closed","CASE_IS":"Case is","CASE_MARKED_FOR_REDACTION":"Case Marked for Redaction","CASE_REDACTION_RESTRICTED":"Case Redaction Restricted","CASE_REDACTION_UNRESTRICTED":"Case Redaction Unrestricted","CASE_TYPE":"Case Type","CASE_UNMARKED_FOR_REDACTION":"Case Unmarked for Redaction","CASE":"Case","CC":"CC","CC/BCC":"CC/BCC","CHAT_DURATION":"Chat Duration","CHAT_TRANSCRIPT_RECEIVED":"Chat Transcript Received","CHAT":"Chat","CHILD_CASE_CLOSED":"Child Case Closed","CHILD_CASE_CREATED":"Child Case Created","CHILD_CASES":"Child Cases","CHOOSE_FILES":"Choose files","CITIZENSHIP_STATUS":"Citizenship Status","CLEARED_CONCERNING_EMPLOYEE_{ID}_{FIRST}_{LAST}":"Cleared concerning employee \u003ca href=\u0022employee/{0}\u0022 target=\u0022_self\u0022\u003e{1} {2}\u003c/a\u003e","CLEARED_CONCERNING_EMPLOYEE":"Cleared Concerning Employee","CLOCK_RUNNING":"Clock Running","CLOSE_CASE_BY":"Close Case By","CLOSE_CASE":"Close Case","CLOSE":"Close","CLOSED":"Closed","COMMITMENT_DATE":"Commitment Date","CONCERNING_EMPLOYEE":"Concerning Employee","CONDITION":"Condition","CONFIDENTIAL":"Confidential","CREATE_AND_CLOSE":"Create and Close","CREATE_CASE":"Create Case","CREATE_CHILD_CASE_{NAME}":"Create Child Case for Case {0}","CREATE":"Create","CREATED":"Created","DATE_OF_BIRTH":"Date of Birth","DATE":"Date","DELETE_ALL":"Delete All","DELETE":"Delete","DETAILS":"Details","DISPATCH":"Dispatch","DISPATCHED":"Dispatched","DROP_FILES_HERE":"Drop files here","DUE_DATE":"Due Date","DUE":"Due","EDIT_ADDITIONAL_DETAILS":"Edit Additional Details","EDIT_CASE_EMPLOYEE":"Edit Case Employee","EDIT_CASE":"Edit Case","EDIT":"Edit","EMAIL_RECEIVED":"Email Received","EMAIL_SENT":"Email Sent","EMAIL":"Email","EMPLOYEE_DATA_AS_OF_KEY":"Employee Data as of","EMPLOYEE_ID":"Employee Id","EMPLOYEE_TYPE":"Employee Type","EMPLOYEE":"Employee","ENTER_NOTES_HERE":"Enter Notes Here","ERROR":"Error","ETHNICITY":"Ethnicity","EVENT_RULE":"Event Rule","EXECUTED":"executed","EXPENSE":"Expense","FILE_TOO_BIG_{NAME}":"File exceeds maximum size: \u003cstrong\u003e{0}\u003c/strong\u003e","FILES":"Files","FIND_A_CONCERNING_EMPLOYEE":"Find a concerning employee","FIND_AN_EMPLOYEE":"Find an employee","FORMS":"Forms","FORWARD_SHORTCUT":"Forward latest Email","FORWARD":"Forward","FORWARDED":"Forwarded","FROM_{FROM}":"\u003cstrong\u003eFrom:\u003c/strong\u003e {0}","FROM":"From","GENDER":"Gender","GO_HOME":"Go Home","HISTORY_UPDATED":"History Updated","HOME":"Home","HOURS":"Hours","ID":"Id","INITIAL_RESPONSE_BREACHED":"Initial Response Breached?","INITIAL_RESPONSE_BY":"Initial Response By","INITIAL_RESPONSE_RECORDED":"Initial Response Recorded","INITIAL_RESPONSE":"Initial Response","INSERT_TEMPLATE_HINT":"Type \u0027@@\u0027 within the text box to quickly apply a template","INSERT_TEMPLATE":"Insert Template","INSUFFICIENT_PERMISSIONS":"Insufficient permissions","INTERNAL":"Internal","JOB_PROFILE":"Job Profile","KEYBOARD_SHORTCUTS":"Keyboard Shortcuts","LABEL_ADDED":"Label Added","LABEL_REMOVED":"Label Removed","LABELS":"Labels","LAST_MODIFIED":"Last Modified","LINK":"Link","LINKED_SOLUTION":"Linked Solution","LOCATION":"Location","LOG_EMAIL":"Log Email","LOG_NOTE":"Log Note","LOG":"Log","LOGGED_OUT_NOTIFICATION":"Your session has expired. Redirecting to the login page...","LOGGED":"logged","LOGOUT":"Logout","LOGS":"Logs","MANAGEMENT_LEVEL":"Management Level","MANAGER_EMAIL":"Manager Email","MANAGER_NAME":"Manager Name","MANAGER_PHONE":"Manager Phone","MANAGER":"Manager","MARITAL_STATUS":"Marital Status","MARK_AS_CONFIDENTIAL":"Mark as Confidential","MARK_AS_NON_CONFIDENTIAL":"Mark as Non Confidential","MATCHING_SOLUTIONS":"Matching Solutions","MAXIMUM_NUMBER_OF_TIMERS_REACHED":"Maximum number of timers reached","MORE":"More","NAME":"Name","NEXT_TAB":"Next Tab","NO_CHILD_CASES_ON_CHILD_CASE":"This case is a child case and cannot have its own children","NO_ENTRIES":"No Entries","NO_RESULTS_FOUND":"No Results Found","NO_VIRUS_DETECTED":"No virus detected","NO":"No","NONE":"None","NOTE_LOGGED":"Note Logged","NOTE":"Note","NOTES":"Notes","OF":"of","OPEN":"Open","OR_DRAG_THEM_HERE":" or drag them here","ORGANIZATION":"Organization","ORIGIN":"Origin","ORIGINAL_MESSAGE":"Original Message","OWNED_BY":"Owned By","OWNER":"Owner","PAGE_403_LINE_1":"You do not have permission to view this page","PAGE_403_TITLE":"Access Denied","PAGE_404_LINE_1":"No worries - it happens to the best of us.","PAGE_404_LINE_2":"Try using the Search box above to find what you\u0027re looking for or \u003ca href=\u0022./\u0022 target=\u0022_self\u0022\u003ereturn Home\u003c/a\u003e","PAGE_404_TITLE":"Uh oh! Looks like you\u0027ve stumbled onto a nonexistent page","PARENT_CASE_ID":"Parent Case Id","PAUSED":"Paused","PAY_GROUP":"Pay Group","PORTAL_CASE_TYPE":"Portal Case Type","PREFERRED_NAME":"Preferred Name","PREVENT_REDACTION":"Prevent Redaction","PREVIOUS_CASES":"Previous Cases","PRIMARY_EMAIL":"Primary Email","PRIMARY_PHONE":"Primary Phone","PRIMARY_SITE":"Primary Site","PRINT_CASE_{ID}":"Print Case {0}","PRINT":"Print","PRIORITY":"Priority","PROFILE":"Profile","QUANTITY":"Quantity","QUERY":"Query","QUEUE":"Queue","RATE_IN_DOLLARS":"Rate ($)","REDACT":"Redact","REDACTION_PENDING":"Redaction Pending","REDACTION_RESTRICTED":"Redaction Restricted","REJECT":"Reject","REJECTED":"Rejected","REMOVE":"Remove","REOPEN":"Reopen","REOPENED":"Reopened","REPLY_ALL_SHORTCUT":"Reply All to latest Email","REPLY_ALL":"Reply All","REPLY_SHORTCUT":"Reply to latest Email","REPLY":"Reply","REPORTS":"Reports","REQUIRED_FIELD":"Required Field","RESOLUTION":"Resolution","RESPOND":"Respond","RESPONDED_TO":"Responded To","RESUME":"Resume","RETURN_HOME":"Return Home","REVERSE_ORDER":"Reverse Order","RULE_ACTION_MESSAGE":"Rule Action Message","SCANNING":"Scanning","SEARCH":"Search","SEE_ALL_SHORTCUTS":"see all","SENSITIVE":"Sensitive","SETUP":"Setup","SEVERITY":"Severity","SHORTCUT_FOOTER":"The \u0027+\u0027 sign signifies a combination of letters.","SHOW_LESS":"Show Less","SHOW_MORE":"Show More","SITE":"Site","SLA_ADDED":"SLA Added","SLA_BREACHED_{CONTROL_POINT_NAME}":"SLA Breached {0}","SLA_BREACHED":"SLA Breached?","SLA_CONTROL_POINT_BREACHED":"SLA Control Point Breached","SLA_INITIAL_RESPONSE_BREACHED":"SLA Initial Response Breached","SLA_OK":"SLA OK","SLA_PAUSED":"SLA Paused","SLA_REMOVED":"SLA Removed","SLA_RESUMED":"SLA Resumed","SLA_STARTED_RESPECTING_PAUSES":"SLA Started Respecting Pauses","SLA_STOPPED_RESPECTING_PAUSES":"SLA Stopped Respecting Pauses","SLA_TARGET_RESOLUTION_BREACHED":"SLA Target Resolution Breached","SLA":"SLA","SOLUTION_{ID}_LINKED":"Solution {0} Linked","SOLUTION_{ID}_UNLINKED":"Solution {0} Unlinked","SOLUTION_LINKED":"Solution Linked","SOLUTION_UNLINKED":"Solution Unlinked","SOLUTION":"Solution","STARTED":"Started","STATUS":"Status","SUBJECT":"Subject","SUBMIT":"Submit","TEMPLATE":"Template","TIME_TYPE":"Time Type","TIME":"Time","TIMELINE":"Timeline","TIMER_STARTED_RESPECTING_NONWORKING_SCHEDULE":"Timer Started Respecting Non-Working Schedule","TIMER_STARTED_RESPECTING_SLA_CLOCK":"Timer Started Respecting SLA Clock","TIMER_STARTED_RESPECTING_WORK_CALENDAR":"Timer Started Respecting Work Calendar","TIMER_STARTED":"Timer Started","TIMER_STOPPED_RESPECTING_NONWORKING_SCHEDULE":"Timer Stopped Respecting Non-Working Schedule","TIMER_STOPPED_RESPECTING_SLA_CLOCK":"Timer Stopped Respecting SLA Clock","TIMER_STOPPED_RESPECTING_WORK_CALENDAR":"Timer Stopped Respecting Work Calendar","TIMER_STOPPED":"Timer Stopped","TITLE":"Title","TO_{TO}":"\u003cstrong\u003eTo:\u003c/strong\u003e {0}","TO":"To","TOTAL_IN_DOLLARS":"Total ($)","TRANSCRIPT":"Transcript","TYPE":"Type","UNLINK_SOLUTION":"Unlink Solution","UNSUCCESSFUL_CASE_REDACT_MARKED":"Case could not be marked for redaction","UNSUCCESSFUL_CASE_REDACT_MARKED_DESCRIPTION":"The case could not be marked for redaction for the following reason(s):","UPDATE":"Update","UPLOAD_FAILED_{NAME}":"Upload Failed: \u003cstrong\u003e{0}\u003c/strong\u003e","UPLOAD_FAILED":"Upload Failed","UPLOAD_FILE":"Upload File","VIRUS_DETECTED":"Virus detected","VIRUS_SCAN":"Virus Scan","WAIT_TIME":"Wait Time","WITH_RESOLUTION_{RESOLUTION}":"\u003cstrong\u003eWith Resolution:\u003c/strong\u003e {0}","WORK_ADDRESS":"Work Address","WORKFLOW":"Workflow","WORKSPACE":"Workspace","YANK":"Yank","YANKED":"Yanked","YES":"Yes","{NUM}_CASES_LINKED":"{0} case(s) successfully linked","ARE_YOU_SURE":"Are you sure you want to continue?","AVERAGE_RATING":"Average Rating","CASE_{ID}_LINKED":"Case {0} Linked","CASE_{ID}_UNLINKED":"Case {0} Unlinked","CASE_LINKED":"Case Linked","CASE_UNLINKED":"Case Unlinked","CONFIRM":"Confirm","COUNTRY":"Country","CREATE_SOLUTION":"Create Solution","DESCRIPTION":"Description","EDIT_SOLUTION_{ID}":"Edit Solution {0}","EDIT_SOLUTION":"Edit Solution","ENTER_DESCRIPTION":"Enter Description","ENTER_RESOLUTION":"Enter Resolution","INCLUDE_CLOSED_CASES":"Include your recently closed cases","LANGUAGE":"Language","LINK_CASES":"Link Cases","LINK_SOLUTION_TO_CASES":"Link This Solution To Your Case(s)","LINKED_CASES":"Linked Cases","NO_CASES_SELECTED_TO_LINK":"No cases selected to link","NO_MORE_FILTERS":"No More Filters","NO_MORE_LABELS":"No More Labels","PRINT_SOLUTION_{ID}":"Print Solution {0}","REMOVE_SLA":"Remove SLA","SESSION_EXPIRED":"Your session has expired. Redirecting to the login page or \u003ca href=\u0022javascript:window.location.reload()\u0022 target=\u0022_self\u0022\u003eclick here\u003c/a\u003e...","SOLUTION_{ID}":"Solution {0}","SOLUTION_FEEDBACK":"Solution Feedback","SOLUTION_FILTERS":"Solution Filters","SOLUTION_IS":"Solution is","SOLUTION_RATED":"Solution Rated","SOLUTION_RATING":"Solution Rating","SOLUTION_TYPE":"Solution Type","EFFECTIVE":"Effective","KEY":"Key","REASON":"Reason","REDACTED":"Redacted","RULE_NAME":"Rule Name","SHORTCUTS_USED":"Shortcuts Used","UPLOADING":"Uploading","VALUE":"Value","VIA":"via","WEB_NOTIFIER":"Web Notifier","WORKDAY_EMPLOYEE_TERMINATED":"Initiated Employee Termination in Workday","WORKDAY_EMPLOYEE_TERMINATION_FAILED":"Initiate Employee Termination in Workday Failed","WORKDAY_END_CONTINGENT_CONTRACT_FAILED":"Initiate End Contingent Worker Contract in Workday Failed","WORKDAY_END_CONTINGENT_CONTRACT":"Initiated End Contingent Worker Contract in Workday","LINKED":"Linked","RECENT_ITEMS":"Recent Items","DELETE_FILE":"Delete File","TRUNCATED_EMAIL":"This email has been truncated due to its size","FILE_{NAME}_EXCEEDS_MAX_LENGTH_{SIZE}":"File \u0027{0}\u0027 exceeded the maximum allowable size of {1} KB","RESTORE_DRAFT":"Restore Draft","500_MESSAGE_V2":"There was a server error while trying to do this operation (500)","ADD_FILTER":"Add a filter to see results","APP_LOCALIZATION_HELP":"Culture (language and region) for the application","APPLY":"Apply","CASES_IN_MY_QUEUES":"Cases in My Queues","CONCERNING_EMPLOYEE_ID":"Concerning Employee Id","CONSOLE":"Console","DOWNLOAD":"Download","FILTERS":"Filters","FOCUS_NEXT_ROW":"Focus Next Row","FOCUS_PREVIOUS_ROW":"Focus Previous Row","GRID_TIMESTAMP_FORMAT":"Grid Timestamp Format","GRID_TIMESTAMP_HELP":"How dates and times are formatted within grids (console, query cases, query solutions, etc.)","IS_SENSITIVE":"Is Sensitive","LABELS_EMPTY":"No open cases with your labels","LAST_CLOSE_DATE":"Last Close Date","LAST_CLOSE_RESOLUTION":"Last Close Resolution","MISSING_REQUIRED_VALUE":"Missing required value","MY_CASES":"My Cases","MY_QUERIES":"My Queries","MY_QUEUES":"My Queues","MY_SOLUTIONS":"My Solutions","NEW_CASE_QUERY":"New Case Query","NEW_QUERY":"New Query","NEW_SOLUTION_QUERY":"New Solution Query","NO_ITEM_SELECTED":"No Item Selected","NO_SAVED_QUERIES":"No Saved Queries","OPEN_ROW":"Open Row","QUEUES_EMPTY":"All of your queues are empty","REFRESH_RESULTS":"Refresh Results","RENAME":"Rename","RESET_COLUMNS":"Reset Columns","SAVE_AS":"Save As","SAVE":"Save","SELECT_ROW":"Select Row","SELECT":"Select","SOLUTIONS_IN_MY_QUEUES":"Solutions in My Queues","TIMELINE_TIMESTAMP_HELP":"How dates and times are formatted within the timeline (cases, solutions)","TOGGLE_PREVIEW_PANE":"Toggle Preview Pane","UNSAVED":"Unsaved","USER_PREFERENCES":"User Preferences","APP_LOCALIZATION":"App Localization","CUSTOMIZE_TIMELINE_TIMESTAMP":"Customize Timeline Timestamp","DEFAULT":"Default","LONG_DATE_AND_TIME":"Long Date and Time","PREFERENCE_SAVED":"Preference Saved","PREFERENCES":"Preferences","SHORT_DATE_AND_TIME":"Short Date and Time","TIMELINE_TIMESTAMP_FORMAT":"Timeline Timestamp Format","VIEW_ALL":"View All","COPIED":"Copied","COPY_PORTAL_LINK":"Copy Portal Solution Link to Clipboard","CONCERNING":"Concerning","EITHER_EMPLOYEE_OR_CONCERNING":"is either the employee or the concerning employee","FOR":"For","IS_CONCERNING_EMPLOYEE":"is the concerning employee","IS_EMPLOYEE":"is the employee","CONTINGENT":"Contingent","ADVANCED":"Advanced","CASE_ID":"Case Id","PREFERENCES_RESET":"Preferences Reset","RESET_USER_PREFERENCES_HELP":"Reset user preferences (grid column preferences, timestamp formats, timeline ordering, etc.)","RESET_USER_PREFERENCES":"Reset User Preferences","SELECT_OR_TYPE":"Select or type","SOLUTION_ID":"Solution Id","PORTAL_SETTINGS":"Portal Settings","PORTAL_SETTINGS_DESCRIPTION":"How this solution will be displayed in the Portal application","DISPLAY_RELATED_CARD":"Display Related Articles Card","DISPLAY_FILES_CARD":"Display Files Card","DISPLAY_FEEDBACK_CARD":"Display Feedback Card","DISPLAY_SOLUTION_TITLE":"Display Title","INCLUDE_IN_LATEST_CHANGED":"Include in \u003cem\u003eLatest Page Changes\u003c/em\u003e card","INCLUDE_IN_MOST_VISITED":"Include in \u003cem\u003eMost Visited Pages\u003c/em\u003e card","CANNOT_DELETE_UNOWNED_QUERY":"Cannot delete a query that you do not own","CANNOT_RENAME_UNOWNED_QUERY":"Cannot rename a query that you do not own","CANNOT_SAVE_UNOWNED_QUERY":"Cannot save a query that you do not own","CUSTOM_HOME_PAGE":"Custom Home Page","CUSTOM_HOME_PAGE_HELP":"Location to navigate to when clicking on the logo in the header","CUSTOM_HOME_PAGE_SET":"Custom Home Page Set","NO_OPTIONS":"No options","PAGE_404_LINE_3":"If you\u0027re here because of clicking on a Home link (or the logo in the header), you may want to check your \u003ca href=\u0022preferences\u0022\u003ePreferences\u003c/a\u003e to be sure it\u0027s valid.","PLEASE_APPLY_FACETS_BEFORE_RENAMING":"Please apply facets before renaming","PLEASE_APPLY_FACETS_BEFORE_SAVING":"Please apply facets before saving","RESET":"Reset","SET_HOME_PAGE":"Set Custom Home Page","SET_THIS_PAGE_HOME":"Set this page as Home","ALTERNATE_ID":"Alternate Id","{X}_OF_{Y}_SUCCEEDED":"{0} of {1} succeeded","{X}_ON_PAGE_SELECTED":"{0} on this page are selected","{X}_SECONDS":"{0} Seconds","ACTION":"Action","ADD_LABELS":"Add Labels","ALL_{X}_ITEMS_SELECTED":"All {0} items have been selected","BATCH_ACTIONS_REPORT":"Batch Actions Report","BATCH_ACTIONS":"Batch Actions","CHANGE_CASE_TYPE":"Change Case Type","CHANGE_STATUS":"Change Status","ELAPSED_TIME":"Elapsed Time","END":"End","MAXIMUM_SELECTED_{X}":"Maximum selected ({0})","MY_RECENT_BATCH_ACTIONS":"My recent batch actions","NO_ITEMS_SELECTED":"No Items Selected","REMOVE_LABELS":"Remove Labels","RESULT":"Result","SELECT_ALL_{X}":"Select all {0}","SELECT_NEXT_{X}":"Select the next {0}","START":"Start","VIEW_REPORT":"View Report","ADDRESS":"Address","ADDRESS_2":"Address 2","ALLOW_PURGE":"Allow Purge","ALTERNATE_NAME":"Alternate Name","ASSET_ID":"Asset Id","ASSET_NAME":"Asset Name","ASSET_TYPE":"Asset Type","BROADCAST_NAME":"Broadcast Name","CITY":"City","JOB_TITLE":"Job Title","LAST_SENT_TIME":"Last Sent Time","LATEST":"Latest","NEW_ASSET_QUERY":"New Asset Query","NEW_BROADCAST_QUERY":"New Broadcast Query","NEW_EMPLOYEE_QUERY":"New Employee Query","NEW_ORGANIZATION_QUERY":"New Organization Query","NEW_SITE_QUERY":"New Site Query","NO_ADDITIONAL_DATA":"No Additional Data","ORGANIZATION_ID":"Organization Id","ORGANIZATION_NAME":"Organization Name","ORGANIZATION_TYPE":"Organization Type","ORIGINATOR":"Originator","PHONE":"Phone","POSTAL_CODE":"Postal Code","PREVENT_PURGE":"Prevent Purge","PRIMARY_EMAIL_ADDRESS":"Primary Email Address","PURGE":"Purge","SENT":"Sent","SERIAL_NUMBER":"Serial Number","SITE_ID":"Site Id","SITE_NAME":"Site Name","SITE_TYPE":"Site Type","STATE_OR_PROVINCE":"State or Province","USERNAME":"Username","VERSION":"Version","WEBSITE":"Website","FAX":"Fax","NOT_FOUND":"Not Found","PURGED":"Purged","OWNER_DEPARTMENT":"Owner Department","OWNER_WORKGROUP":"Owner Workgroup","PRIMARY_SITE_ADDR_COUNTRY":"Country","ALL_QUERIES":"All Queries","ALREADY_SHARED_WITH_EVERYONE":"Already shared with everyone","CANNOT_EDIT_CLOSED_CASE":"Cannot edit a closed case","CONFIRM_QUERY_DELETION":"Are you sure you want to delete this query?","DEPARTMENT":"Department","DOWNLOAD_QUERY":"Download Query","EDIT_CASE_{ID}":"Edit Case {0}","FAVORITE":"Favorite","FILTER_BY":"Filter by","GO_TO_ALL_QUERIES":"Go to All Queries","IGNORE":"Ignore","IGNORED":"Ignored","MARKED_AS_FAVORITE":"Marked as Favorite","ME":"Me","MY_FAVORITE_QUERIES":"My Favorite Queries","NO_FAVORITE_QUERIES":"No Favorite Queries","NO_ONE":"No One","QUERY_IS_SHARED":"This query is shared to others. Deleting it will also delete it for them.","QUERY_SHARED":"Query Shared","REFRESH_QUERY":"Refresh Query","SEARCH_FOR_DEPARTMENT":"Search for department","SEARCH_FOR_USER":"Search for user","SEARCH_FOR_WORKGROUP":"Search for workgroup","SHARE_QUERY":"Share Query","SHARE_WITH_DEPARTMENT":"Share with Department","SHARE_WITH_EVERYONE":"Share with Everyone","SHARE_WITH_USER":"Share with User","SHARE_WITH_WORKGROUP":"Share with Workgroup","SHARE":"Share","SHARED_WITH_EVERYONE":"Shared With Everyone","SHARED_WITH_ME":"Shared With Me","SHARED_WITH":"Shared With","SHARED":"Shared","TOGGLE_FAVORITE":"Toggle Favorite","TYPE_TO_SEARCH":"Type to search","UNFAVORITE":"Unfavorite","UNIGNORE":"Unignore","UNMARKED_AS_FAVORITE":"Unmarked as Favorite","USER":"User","WORKGROUP":"Workgroup","ACTIVE":"Active","APPLICABLE_TO_SELECTED_CULTURES":"This menu applies to the selected cultures","CASE_TITLE":"Case Title","CLONE_PORTAL_CONFIG":"Clone Portal Config","CLONE":"Clone","COPY":"Copy","CREATE_PORTAL_CONFIG":"Create Portal Config","CREATE_PORTAL_MENU_ITEM":"Create Portal Menu Item","CULTURE":"Culture","CULTURES":"Cultures","DEFAULT_PORTAL_CONFIG":"Default Portal Config","DELETE_PORTAL_CONFIG":"Delete Portal Config","DESELECT_ALL":"Deselect All","DISABLED":"Disabled","EDIT_PORTAL_CONFIG":"Edit Portal Config","EDIT_PORTAL_MENU_ITEM":"Edit Portal Menu Item","ENABLED":"Enabled","FIND_A_SOLUTION":"Find a solution","HELP_PAGE":"Help Page","HELP_SOLUTION":"Help Solution","HOME_PAGE":"Home Page","HOME_SOLUTION":"Home Solution","INACTIVE":"Inactive","INSERT_VARIABLE":"Insert Variable","MANAGE_PORTAL_CONFIGURATIONS":"Manage Portal Configurations","MAXIMUM_MENU_DEPTH":"Portal Configs can only be 3 levels deep","MENU_ITEMS":"Menu Items","MENU_TO_BE_VIEWED":"Menu to be viewed","MENU":"Menu","MENUITEM_HAS_ORPHANS":"This item has sub-items, but it\u0027s action is not set to Menu.","MENUITEM_SOLUTION_UNSET":"The action for this menu item is a Solution, but a Solution has not been set.","MUST_HAVE_DEFAULT_PORTAL_CONFIG":"Must have a default portal config","NO_ITEMS_EXIST":"No Items Exist","PORTAL_CONFIG_{0}_DELETED":"Portal Config \u0022{0}\u0022 Deleted","PORTAL_CONFIG_{0}":"Portal Config {0}","PORTAL_CONFIG_CLONED":"Portal Config Cloned","PORTAL_CONFIG_NOT_FOUND":"Portal Config Not Found","PORTAL_CONFIG_PREVIEW_DESCRIPTION":"This is a preview of how the menu and pages will display within the Portal app for a specific user, depending on their selected culture and applied portal filters","PORTAL_CONFIG_PREVIEW":"Portal Config Preview","PORTAL_CONFIG_UPDATED":"Portal Config Updated","PORTAL_CONFIG":"Portal Config","PORTAL_FILTERS":"Portal Filters","PREVIEW_FOR_EMPLOYEE":"Preview for an Employee","PREVIEW":"Preview","SELECT_ALL":"Select All","SEPARATOR":"Separator","SOLUTION_NOT_FOUND":"Solution Not Found","TEXT":"Text","TOP_LEVEL":"Top Level","URL":"Url","ADDITONAL_DETAILS":"Additional Details","CANNOT_DELETE_DEFAULT_CONFIG":"Cannot delete a default configuration","CURRENT_PORTAL_CONFIG_SETTING":"Current Portal Config setting","MIGRATE_MENU_ITEMS_DESCRIPTION":"Migrate menu items from the PortalMenuButtons list to the Portal Config Manager.","MIGRATE_PART_1":"This process allows customers who previously implemented their portal menus using the PortalMenuButtons list to migrate to the newer, more robust Portal Config Manager.","MIGRATE_PART_2":"The Migrate process will create a new Portal Config for each culture that is defined in the PortalMenuButtons list, and will create new menu items within the new Portal Config that mimic what is defined in the PortalMenuButtons list.","MIGRATE_PART_3":"If your Portal menus are already driven by Portal Configs, then you do not need to do anything here.","MIGRATE_PART_4A":"In order for the portal to have its menus driven by the Portal Config Manager, the \u0022Portal Config\u0022 setting must be set to Enabled.","MIGRATE_PART_4B":"This setting can be enabled by the Dovetail support/implementation team.","MIGRATE":"Migrate","PORTAL_CONFIG_MIGRATE":"Portal Config Migrate","EXPIRES":"Expires","EMAIL_LOGGED":"Email Logged","EMPLOYEE_CHANGED":"Employee Changed","ACKNOWLEDGED":"Acknowledged","Active":"Active","ADD_SITE":"Add a Site","ASSETS":"Assets","BIRTH_NAME":"Birth Name","BROADCASTS":"Broadcasts","CANCEL_PURGE":"Cancel Purge","CASES":"Cases","CHANGE":"Change","CHANGE_AVATAR":"Change Avatar","CHANGE_PASSWORD":"Change Password","CHOOSE_IMAGE":"Choose Image","CREATE_EMPLOYEE":"Create Employee","DISABLE_LOGIN":"Disable Login","DOVETAIL_PORTAL":"Dovetail Portal","dropHint":"Drop your files here","dropPasteFiles":"Drop files here, paste or ","EDIT_EMPLOYEE":"Edit Employee","EMAIL_COPIED":"Email copied to clipboard","EMAIL_IS_PRIMARY":"Email is primary","EMPLOYEE_FILTERS":"Employee Filters","EMPLOYEE_ID_ALREADY_IN_USE":"Employee Id is already in use","ENABLE_LOGIN":"Enable Login","file":"file","FIRST_NAME":"First Name","FLASHES":"Flashes","HRIS_ID":"HRIS Id","InActive":"Inactive","INTERACTIONS":"Interactions","LAST_NAME":"Last Name","LAST_NOTIFIED":"Last Notified","LOCKED_OUT":"Locked Out","LOGIN_STATUS":"Login Status","LoginStatus":"Login Status","MAKE_PRIMARY":"Make Primary","MIDDLE_NAME":"Middle Name","NOT_ACKNOWLEDGED":"Not Acknowledged","OR_DRAG_HERE":"or drag here","Password":"Password","PHONE_IS_PRIMARY":"Phone is primary","PORTAL":"Portal","PREFERRED_FIRST_NAME":"Preferred First Name","Primary":"Primary","PronounPlaceholder":"Third-person pronouns. (e.g. she/her/hers)","PRONOUNS":"Pronouns","PURGE_STATUS_PENDING":"Scheduled","PURGE_STATUS":"Purge Status","PURGE_STATUS_RESTRICTED":"Purge Restricted","Remove":"Remove","RESET_LOCKOUT":"Reset Lockout","SEARCH_FOR_SITE":"Search for Site","SITES":"Sites","SUFFIX":"Suffix","uploading":"Uploading","USERNAME_ALREADY_IN_USE":"Username is already in use","VerifyPassword":"Verify Password","FULL_NAME":"Full Name","ATTACHMENT_DOWNLOAD_DISABLED":"download disabled until virus scan completes","ATTACHMENT_IS_INFECTED":"virus detected","ATTACHMENT_SCAN_IS_PENDING":"virus scan pending","ATTACHMENT_DELETED_VIRUS_PRESENT":"The file was deleted because a virus was detected","PreferredName":"Preferred Name"},"features":{"singlePageEmployeeExperience":false,"advancedEmployeeSearch":true,"alternateIdEnabled":false,"portalConfig":true,"singlePageConsoleExperience":true,"chat":false,"singlePageExperience":true,"sla":true,"xpertHr":true},"currentUser":{"id":"6e8e63e8-c037-4d55-bb3f-ad3301327293","username":"annagreen","firstName":"Anna","lastName":"Green","avatarUrl":"https://s3.us-west-2.amazonaws.com/avatars.demo.us-west-2.dovetailnow.com/dev/00000000-0000-0000-0000-000000000000?cache=ec2c1889623d43008900f4e66388b9d8","email":"qaexercise@dovetailsoftware.com","isEmployee":false,"isAdmin":false,"currentCulture":"en-US"},"permissions":["Accept:Case","Accept:Solution","Assign:Case","Assign:Solution","AuthenticateLoginScreen","Case:AvailableInSelfService","Case:CaseType","Case:CcList","Case:CcList2","Case:DueDateTime","Case:IsSensitive","Case:IssueSeverity","Case:Origin","Case:PortalCaseType","Case:Priority","Case:Status","Case:Title","ChangeConcerningEmployeeOnCase","ChangeEmployeeOnCase","CloseCase:Case","Create Attachments:Case","Create Attachments:Solution","Create:Case","Create:EmailLog","Create:ExpenseLog","Create:NotesLog","Create:Solution","Create:TimeLog","CreateChildCase:Case","Delete Attachments:Case","Delete Attachments:Solution","Dispatch:Case","Dispatch:Solution","Download Attachments:Case","Download Attachments:Solution","Forward:Case","Forward:Solution","LinkSolution:Solution","Mark as internal","Portal Settings:Solution","Redact Cases","Reject:Case","Reject:Solution","Remove SLA:Case","Reopen:Case","Restrict Redact:Case","SmartGrid:ChildCasesGrid","SmartGrid:RecentCasesForSiteGrid","UnLinkSolution:Case","View:Case","View:Solution","ViewBlackLabels","ViewBlueLabels","ViewBrownLabels","ViewCasesFromAllEmployees","ViewCasesOutsideOfYourDepartmentOrQueues","ViewCasesOutsideOfYourOrganization","ViewCrimsonLabels","ViewFuschiaLabels","ViewGoldLabels","ViewGreenLabels","ViewIndigoLabels","ViewLimeLabels","ViewMagentaLabels","ViewNavyLabels","ViewOrangeLabels","ViewPinkLabels","ViewPurpleLabels","ViewRedLabels","ViewSensitiveCases","ViewSilverLabels","ViewSlateLabels","ViewTanLabels","ViewTealLabels","Yank:Case","Yank:Solution"]};</script>
+
+    <script type="text/javascript" src="./Create Case_files/library.dll.js.download"></script>
+    
+    <script type="text/javascript" src="./Create Case_files/main.js.download"></script>
+  
+
+<span style="position: absolute; top: -99999px; left: -99999px; width: auto; padding: 0px; white-space: pre; letter-spacing: 0px; font-size: 14px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-weight: 400; text-transform: none;">Find an employee</span><div id="lightboxOverlay" tabindex="-1" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" tabindex="-1" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt=""><div class="lb-nav"><a class="lb-prev" aria-label="Previous image" href="https://dev.dovetailnow.com/agent/"></a><a class="lb-next" aria-label="Next image" href="https://dev.dovetailnow.com/agent/"></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div></body></html>
